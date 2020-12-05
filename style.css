@@ -1,0 +1,168 @@
+body{
+    background: url(images/Background.svg);
+    background-position: center, center;
+    padding: 0;
+    margin: 0;
+}
+
+#logo-section{
+    margin-top: 20px;
+    padding-left: 137px;
+}
+
+#logo-section, img{
+    width: 40px;
+    height: auto;
+}
+
+#hero-section{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 122px;
+    margin-right: 122px;
+}
+.hero-text{
+    flex: 1;
+}
+.hero-image{
+    flex: 1;
+}
+.hero-text h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 78.4px;
+    letter-spacing: 2%;
+    margin: 0;
+    color: #2D2942;
+}
+
+.text-sub-1{
+    margin-top: 24px;
+    margin-bottom: 0;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 2%;
+    color: #2D2942;
+}
+
+
+.btn{
+    margin-top: 40px;
+    text-decoration: none;
+    color: #2D2942;
+    background-color: #FBC343;
+    padding: 16px 32px;
+    border: 1px solid #FBC343;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.btn:hover{
+    text-decoration: none;
+    color: #2D2942;
+}
+
+.text-sub-1-italic{
+    font-family: 'Nunito', sans-serif ;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 18px;
+    letter-spacing: 2%;
+    margin-top: 8px;
+}
+
+.hero-image img{
+    width: 100%;
+}
+
+#how-it-works{
+    margin-top: 48px;
+}
+
+#how-it-works h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #2D2942;
+}
+#how-it-works-items{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#how-it-works-items .step{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+#how-it-works-items .step img{
+    width: 40px;
+    height: auto;
+    margin-bottom: 16px;
+}
+.text-sub-2{
+    font-family: 'Nunito', sans-serif ;
+    color: #2D2942;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 31px;
+    letter-spacing: 2%;
+    text-align: center;
+
+}
+
+@media (max-width: 400px) {
+    #logo-section{
+        margin-top: 20px;
+        padding-left: 16px;
+    }
+    #hero-section{
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    .hero-image{
+        flex: 0;
+        display: none;
+    }
+    .hero-text h1{
+       
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 48px;
+    }
+    #how-it-works-items{
+        display: flex;
+        flex-direction: column;
+        margin: 40px;
+    }
+    #how-it-works-items .step img{
+        width: 80px;
+        height: auto;
+        margin-bottom: 16px;
+    }
+    .text-sub-2{
+        font-family: 'Nunito', sans-serif ;
+        color: #2D2942;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 31px;
+        letter-spacing: 2%;
+        text-align: center;
+    
+    }
+    
+    
+  }
