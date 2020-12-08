@@ -34,8 +34,29 @@
         <div class="hero-text">
             <h1>Find your next home in less than 30 days. For free!</h1>
             <p class="text-sub-1">Kijiji is a faster, safer and more affordable way to find a house that you will love. Get personalized house recommendations straight to your whatsapp at no cost.</p>
-            <a href="https://forms.gle/Z8UoefjeDH1t2NpXA" class="btn">Fill house details form</a>
+            <!-- <a href="https://forms.gle/Z8UoefjeDH1t2NpXA" class="btn btn-house-form">Fill house details form</a> -->
+            <p id="waitlist-btn" class="btn btn-popup">Fill house details form</p>
             <p class="text-sub-1-italic">*It takes less than 1 minute</p>
+
+            <!-- Waitlist pop-up -->
+            <!-- The Modal -->
+            <div id="waitlist-modal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div id="waitlist-content">
+                        <img src="Images/Waitlist image.svg" alt="">
+                        <h3>Oh wow it's packed in here </h3>
+                        <p>To ensure we provide the best quality homes to our clients we can only take on a few tenant requests at a time. You can leave us your name and number and we will contact you in 5 days to take your house request</p>
+                        <div class="waitlist-btn">
+                            <a href="https://forms.gle/HmVMaKRguZYh7Vs78" class="btn btn-house-form">Fill contact details</a>
+                        </div>
+                    </div>
+                    
+                </div>
+  
+            </div>
+            <!-- End modal -->
 
             <!-- How it works -->
             <div id="how-it-works">
@@ -86,6 +107,7 @@
     /></noscript>
     <!-- End Facebook Pixel Code -->
     
+    <script src="index.js"></script>
     
 </body>
 </html>
