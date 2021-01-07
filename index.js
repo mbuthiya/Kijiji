@@ -1,25 +1,36 @@
-// Get modal
-var modal = document.getElementById("waitlist-modal");
 
-// Get the button that opens the modal
-var btn = document.getElementById("waitlist-btn");
+window.onload = (event)=>{
+    var defaultValue = 1;
+    var multipleValueInput =document.getElementById("multiple")
+    multipleValueInput.value=defaultValue;
+    var initialTotal = calculateTotal(defaultValue)
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+    document.getElementById("equal-num").innerHTML = commaIt(initialTotal)
 
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
+    multipleValueInput.addEventListener("input",function(e){
+        var unitValue = parseInt(multipleValueInput.value) 
+        if(Number.isInteger(unitValue) && unitValue >0){
+           var newTotal = calculateTotal(unitValue)
+            document.getElementById("equal-num").innerHTML = commaIt(newTotal)
+        }
+        else{
+            document.getElementById("equal-num").innerHTML = commaIt(initialTotal)
+
+        }
+    })
+
+
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+function calculateTotal(units){
+    baseValue = 2000
+    unitsTotals = units * 150;
+
+    total = baseValue + unitsTotals
+
+    return total
 }
 
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
+function commaIt(x){
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
