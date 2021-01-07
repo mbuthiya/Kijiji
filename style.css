@@ -1,168 +1,390 @@
-body{
-    background: url(Images/Background.svg);
-    background-position: center, center;
-    padding: 0;
-    margin: 0;
+/* Navbar */
+#page-navbar .bg-light{
+    background-color: #ffffff !important;
 }
-
-#logo-section{
-    margin-top: 20px;
-    padding-left: 137px;
-}
-
-#logo-section, img{
-    width: 40px;
-    height: auto;
-}
-
-#hero-section{
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-between;
-    margin-left: 122px;
-    margin-right: 122px;
-}
-.hero-text{
-    flex: 1;
-}
-.hero-image{
-    flex: 1;
-}
-.hero-text h1{
-    font-family: 'Poppins', sans-serif;
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 78.4px;
-    letter-spacing: 2%;
-    margin: 0;
+#page-navbar .nav-link{
     color: #2D2942;
+    font-family: "Inter";
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 500;
 }
 
-.text-sub-1{
-    margin-top: 24px;
-    margin-bottom: 0;
-    font-family: 'Nunito', sans-serif;
+#page-navbar .nav-link:hover{
+    text-decoration: underline;
+    color: #FBC343;
+}
+
+#page-navbar nav{
+    padding: 10px 0;
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.05);
+}
+
+#page-navbar .btn{
+    border-radius: 50px;
+    padding: 8px 32px;
+    font-family: "Inter";
     font-weight: 600;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 2%;
-    color: #2D2942;
+    font-size: 16px;
+
 }
-
-
-.btn{
-    margin-top: 40px;
-    text-decoration: none;
-    color: #2D2942;
+#page-navbar .btn-outline-success{
     background-color: #FBC343;
-    padding: 16px 32px;
-    border: 1px solid #FBC343;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    border-radius: 5px;
-    display: inline-block;
+    color: #2D2942;
+    border: none;
 }
-
-.btn:hover{
-    text-decoration: none;
+#page-navbar .btn-outline-success:hover{
+    background-color: #FBC343;
     color: #2D2942;
 }
 
-.text-sub-1-italic{
-    font-family: 'Nunito', sans-serif ;
+/* Hero Styles */
+#image-mobile{
+    display: none;
+}
+#page-hero .hero-content{
+    padding-top: 180px;
+    background: url("Images/Hero-text-background.svg") center center no-repeat;
+    background-size: cover;
+}
+
+#page-hero .hero-content h1{
+    font-family: "Inter";
+    font-size: 80px;
+    font-weight: 400;
+    text-align: center;
+    color: #2D2942;
+}
+
+#page-hero .hero-content h4{
+    margin-top: 40px;
+    font-family: "Inter";
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+    color: #2D2942;
+}
+
+#page-hero .hero-content .btn{
+    border-radius: 50px;
+    padding: 16px 40px;
+    font-family: "Inter";
     font-weight: 600;
-    font-style: italic;
     font-size: 18px;
-    letter-spacing: 2%;
-    margin-top: 8px;
+    margin: 32px 24px;
 }
 
-.hero-image img{
-    width: 100%;
+#page-hero .hero-content .btn-primary,
+#page-hero .hero-content .btn-primary:hover {
+    background-color: #FBC343;
+    color: #2D2942;
+    border: none;
+}
+#page-hero .hero-content .btn-secondary,
+#page-hero .hero-content .btn-secondary:hover {
+    background-color: #fff;
+    color: #FBC343;
+    border: 1px solid #FBC343;
 }
 
-#how-it-works{
+#page-hero .hero-image{
+    display: flex;
+    justify-content: center;
+}
+
+#page-hero .hero-buttons{
+    display: flex;
+    justify-content: center;
+}
+
+/* Page Features */
+#page-features{
+    margin-top: 80px;
+}
+
+#page-features h6{
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: bold;
+    color: #FBC343;
+}
+
+#page-features h2{
+    font-size: 64px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #2D2942;
+    margin-top: 24px;
+}
+
+#page-features p{
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #2D2942;
+    margin-top: 24px;
+}
+
+#page-features img{
+    max-width: 90vw;
+}
+
+#page-features .row{
+    margin-top: 120px;
+}
+
+/* Pricing */
+#page-pricing{
+    background-color: #FFF9EC;
     margin-top: 48px;
 }
 
-#how-it-works h6{
-    font-family: 'Poppins', sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    color: #2D2942;
-}
-#how-it-works-items{
-    display: flex;
-    justify-content: space-evenly;
+#page-pricing .row{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
-#how-it-works-items .step{
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-    
+#page-pricing h6{
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: bold;
+    color: #FBC343;
 }
-#how-it-works-items .step img{
-    width: 40px;
-    height: auto;
-    margin-bottom: 16px;
-}
-.text-sub-2{
-    font-family: 'Nunito', sans-serif ;
+
+#page-pricing p{
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 400;
     color: #2D2942;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 31px;
-    letter-spacing: 2%;
+    margin-top: 24px;
+}
+
+#page-pricing .card{
+    border-radius: 10px;
+    background-color: #FFF9EC;
+    border-color: #FFF9EC;
+    -webkit-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.05);
+    -moz-box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.05);
+    box-shadow: 0px 4px 20px 0px rgba(0,0,0,0.05);
+    font-family: "Lato";
+}
+
+#page-pricing .card .formula{
+    font-weight: 700;
+    font-size: 38px;
+    color: #2D2942;
+}
+
+#page-pricing .card .small{
+    font-family: "Inter";
+    font-size: 20px;
+}
+#page-pricing .card .multiple{
+    width: 120px;
+    height: 120px;
+    background: #FFF9EC;
     text-align: center;
-
+    color: #2D2942;
+    font-weight: bold;
+    border: 1px solid #817F8E;
+    
+}
+#page-pricing .card .multiple::-webkit-inner-spin-button,
+#page-pricing .card .multiple::-webkit-outer-spin-button{
+    -webkit-appearance: none; 
+    margin: 0; 
 }
 
-@media (max-width: 400px) {
-    #logo-section{
+#page-pricing .card .base{
+    font-family: "Lato";
+    font-size: 32px;
+    font-weight: bold;
+    color: #929497;
+}
+
+#page-pricing .card .equal{
+    font-family: "Lato";
+    font-size: 48px;
+    font-weight: bold;
+    color: #2D2942;
+}
+
+#page-pricing img{
+    max-width: 90vw;
+}
+
+#page-pricing .card .btn-primary,
+#page-pricing .card .btn-primary:hover{
+    background-color: #FBC343;
+    color: #2D2942;
+    border: none;
+    border-radius: 50px;
+    padding: 16px 40px;
+    font-family: "Inter";
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Get Started */
+#page-started{
+    margin-top: 40px;
+}
+#page-started h2{
+    font-size: 64px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #2D2942;
+    margin-top: 24px;
+    text-align: center;
+}
+
+#page-started p{
+    font-size: 18px;
+    font-family: "Inter";
+    font-weight: 400;
+    color: #2D2942;
+    margin-top: 24px;
+    text-align: center;
+}
+
+#form-started{
+    width: 60vw;
+    height: 80vh;
+}
+
+
+/* Mobile Styles */
+
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) { 
+    /* Nav */
+    #page-navbar .nav-link{
+        margin: 10px 0;
+    }
+
+    /* Hero */
+    #page-hero .hero-content h1{
+        font-size: 64px;
+        text-align: left;
+        
+    }
+    
+    #page-hero .hero-content h4{
+        font-size: 18px;
+        text-align: left;
+        line-height: 32px;
         margin-top: 20px;
-        padding-left: 16px;
     }
-    #hero-section{
-        margin-top: 40px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 16px;
-        margin-right: 16px;
+
+    #page-hero .hero-content{
+        padding-top: 120px;
     }
-    .hero-image{
-        flex: 0;
+
+    #page-hero .hero-content .btn{
+        margin: 20px 0;
+    }
+
+    #page-hero .hero-content .btn-secondary{
         display: none;
     }
-    .hero-text h1{
-       
-        font-size: 40px;
-        font-weight: 800;
-        line-height: 48px;
+
+    #page-hero .hero-image img{
+        max-width: 100vw;
+        margin-top: 40px;
     }
-    #how-it-works-items{
+
+    #image-mobile{
+        display: block;
+    }
+    #image-desk{
+        display: none;
+    }
+    /* Features */
+    #page-features{
+        margin-top: 40px;
+    }
+    
+    #page-features h6{
+        font-size: 16px;
+    }
+    
+    #page-features h2{
+        font-size: 32px;
+        margin-top: 16px; 
+    }
+    
+    #page-features p{
+        font-size: 16px;
+        margin-top: 16px;
+    }
+    
+    #page-features .row{
+        margin-top: 60px;
+    }
+
+    #page-features .feature-2{
         display: flex;
-        flex-direction: column;
-        margin: 40px;
+        flex-direction: column-reverse;
     }
-    #how-it-works-items .step img{
+
+    /* Pricing */
+    #page-pricing .card-body{
+        display: flex;
+       flex-direction: column;
+        justify-items: center;
+    }
+    #page-pricing .card .formula{
+        font-weight: 700;
+        font-size: 32px;
+    }
+    
+    #page-pricing .card .small{
+        
+        font-size: 16px;
+    }
+    #page-pricing .card .multiple{
         width: 80px;
-        height: auto;
-        margin-bottom: 16px;
+        height: 80px;
+        
     }
-    .text-sub-2{
-        font-family: 'Nunito', sans-serif ;
-        color: #2D2942;
-        font-weight: 600;
-        font-size: 18px;
-        line-height: 31px;
-        letter-spacing: 2%;
+    #page-pricing .card .base{
+        font-size: 24px;
+        
+    }
+    
+    #page-pricing .card .equal{
+        margin-top: 10px;
+        font-size: 32px;
+    }
+
+    #page-pricing .card .btn-primary{
+        margin-top: 20px;
         text-align: center;
-    
     }
-    
-    
-  }
+
+    #page-pricing img{
+       margin-top: 40px;
+    }
+
+    /* Get Started */
+#page-started{
+    margin-top: 20px;
+}
+#page-started h2{
+    font-size: 32px;
+    text-align: left;
+}
+
+#page-started p{
+    font-size: 16px;
+    margin-top: 16px;
+    text-align: left;
+}
+
+#form-started{
+    width: 90vw;
+    height: 80vh;
+}
+
+}
