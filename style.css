@@ -126,6 +126,31 @@
     margin-top: 64px;
 }
 
+/* Pricing */
+#pricing{
+    margin-top: 60px;
+}
+
+.pricing-plans{
+    display: flex;
+}
+
+.pricing-plans img{
+    width: 27vw;
+}
+
+/* Early Access */
+#get-early-access{
+    margin-top: 60px;
+    text-align: center;
+}
+
+iframe{
+    width: 50vw;
+    height: 100vh;
+}
+
+
 @media screen and (min-device-width: 300px) and (max-device-width: 600px) {
 
     #hero-section {
@@ -196,6 +221,27 @@
     .feature .flip{
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    /* Pricing */
+    .pricing-plans {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .pricing-plans img {
+        width: 100vw;
+    }
+
+    /* Early Access */
+    #get-early-access {
+        margin-top: 24px;
+        text-align: left;
+    }
+
+    iframe {
+        width: 100vw;
+        height: 100vh;
     }
 }
 
