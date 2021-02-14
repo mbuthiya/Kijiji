@@ -1,0 +1,102 @@
+.navbar-brand img {
+    height: 48px;
+}
+
+.navbar{
+    -webkit-box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.11);
+}
+
+.nav-link {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #0D1932 !important;
+}
+
+.nav-link:hover{
+    color: #FBC343 !important;
+}
+
+.nav-item {
+    margin-left: 16px;
+}
+
+.bg-light {
+    background-color: #ffff !important;
+}
+
+.btn-primary{
+    padding: 8px 32px;
+    background-color: #FBC343;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #0D1932;
+    border-color: #FBC343;
+    -webkit-box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 8px 32px 0px rgba(251, 195, 67, 0.11);
+}
+
+.btn-primary:hover{
+    background-color: #FBC343;
+    color: #0D1932;
+    border-color: #FBC343;
+    box-shadow: none;
+}
+
+#hero-section{
+    margin-top: 40px;
+}
+
+#hero-section h2{
+    margin-top: 10vh;
+    font-size: 60px;
+    color: #284A97;
+    font-family: poppins;
+    font-weight: 600;
+}
+
+#hero-section p{
+    margin-top: 24px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: poppins;
+    
+}
+
+#hero-section a{
+    margin-top: 24px;
+    padding: 16px 32px;
+    font-size: 16px;
+}
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) {
+
+    #hero-section {
+        margin: 20px 0;
+    }
+
+    #hero-section h2 {
+        margin-top: 0vh;
+        font-size: 40px;
+    }
+
+    #hero-section p {
+        margin-top: 24px;
+        font-size: 16px;
+
+    }
+
+    #hero-section a {
+        margin-top: 16px;
+        padding: 16px 24px;
+        font-size: 14px;
+        display: block;
+    }
+
+    #hero-section img{
+        margin-top: 5vh;
+        width: 90vw;
+    }
+}
+
+
