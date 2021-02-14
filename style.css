@@ -69,6 +69,46 @@
     padding: 16px 32px;
     font-size: 16px;
 }
+
+.v-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Payment Section */
+
+#payment-section{
+    margin-top: 60px;
+    padding-top: 40px;
+    background: url("Images/PaymentBackground.png") center center no-repeat;
+    background-size: cover;
+}
+
+#payment-section h3{
+    font-size: 34px;
+    font-family: poppins;
+    color: #1B3164;
+    font-weight: 600;
+}
+
+#payment-section p{
+    margin-top: 16px;
+    font-size: 16px;
+    font-family: poppins;
+    color: #1B3164;
+}
+
+#payment-section .caption {
+    font-size: 20px;
+    font-family: poppins;
+    color: #FBC343;
+}
+
+#payment-section .row{
+    margin-top: 64px;
+}
+
 @media screen and (min-device-width: 300px) and (max-device-width: 600px) {
 
     #hero-section {
@@ -96,6 +136,35 @@
     #hero-section img{
         margin-top: 5vh;
         width: 90vw;
+    }
+
+    /* Payment Section */
+
+    #payment-section {
+        margin-top: 24px;
+        padding-top: 0px;
+        
+    }
+
+    #payment-section h3 {
+        font-size: 32px;
+    }
+
+    #payment-section p {
+        margin-top: 16px;
+    }
+
+    #payment-section .caption {
+        font-size: 18px;
+    }
+
+    #payment-section .row {
+        margin-top: 64px;
+    }
+
+    #payment-section .flip{
+        display: flex;
+        flex-direction: column-reverse;
     }
 }
 
