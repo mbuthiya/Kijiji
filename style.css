@@ -143,6 +143,7 @@
 #get-early-access{
     margin-top: 60px;
     text-align: center;
+    margin-bottom: 100px;
 }
 
 iframe{
@@ -237,6 +238,7 @@ iframe{
     #get-early-access {
         margin-top: 24px;
         text-align: left;
+        margin-bottom: 100px;
     }
 
     iframe {
