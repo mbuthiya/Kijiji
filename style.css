@@ -85,27 +85,44 @@
     background-size: cover;
 }
 
-#payment-section h3{
+/* Lease Section */
+#lease-management {
+    margin-top: 60px;
+    padding-top: 40px;
+    background: url("Images/Leasemanagementbackground.png") center center no-repeat;
+    background-size: cover;
+}
+
+/* Messages Section */
+#repairs-message {
+    margin-top: 60px;
+    padding-top: 40px;
+    background: url("Images/Repairbackground.png") center center no-repeat;
+    background-size: cover;
+}
+
+
+.feature h3{
     font-size: 34px;
     font-family: poppins;
     color: #1B3164;
     font-weight: 600;
 }
 
-#payment-section p{
+.feature p{
     margin-top: 16px;
     font-size: 16px;
     font-family: poppins;
     color: #1B3164;
 }
 
-#payment-section .caption {
+.feature .caption {
     font-size: 20px;
     font-family: poppins;
     color: #FBC343;
 }
 
-#payment-section .row{
+.feature .row{
     margin-top: 64px;
 }
 
@@ -143,26 +160,40 @@
     #payment-section {
         margin-top: 24px;
         padding-top: 0px;
+        background:none;
         
     }
 
-    #payment-section h3 {
+    /* Lease Section */
+    #lease-management {
+         margin-top: 24px;
+         padding-top: 0px;
+         background:none;
+    }
+
+    #repairs-message {
+        margin-top: 24px;
+        padding-top: 0px;
+        background:none;
+    }
+
+    .feature h3 {
         font-size: 32px;
     }
 
-    #payment-section p {
+    .feature p {
         margin-top: 16px;
     }
 
-    #payment-section .caption {
+    .feature .caption {
         font-size: 18px;
     }
 
-    #payment-section .row {
+    .feature .row {
         margin-top: 64px;
     }
 
-    #payment-section .flip{
+    .feature .flip{
         display: flex;
         flex-direction: column-reverse;
     }
