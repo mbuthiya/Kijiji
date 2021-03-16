@@ -1,0 +1,381 @@
+.bg-light{
+    background-color: white !important;
+}
+
+.navbar{
+    border-bottom: 1px solid #E6E6E6;
+    padding: 20px 0;
+}
+
+.navbar-brand img{
+    width: 100px;
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    font-family:Poppins;
+    font-size: 16px;
+    font-weight: normal;
+    color: #0D1932;
+
+}
+.navbar-nav li{
+    margin-right: 40px;
+}
+
+.navbar-light .navbar-nav .btn-primary,
+.navbar-light .navbar-nav .btn-primary:hover {
+    padding: 10px 34px;
+    background-color: #FBC343;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+}
+
+
+/* Text */
+
+h2{
+    font-size: 60px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #1B3164;
+}
+
+h3 {
+    font-size: 48px;
+    font-family: Poppins;
+    font-weight: 700;
+    color: #1B3164;
+}
+
+h4 {
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #1B3164;
+}
+
+h6{
+    font-size: 20px;
+    font-family: Poppins;
+    font-weight: 500;
+    color: #0D1932;
+}
+
+p{
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: #0D1932;
+}
+
+/* Column Images */
+.column-image{
+    display: flex;
+    justify-content: center;
+}
+
+.column-image img{
+    width: 80%;
+}
+
+.page-section{
+    margin-bottom: 80px;
+}
+/* Hero section */
+#hero-section {
+    background: url(Images/Background.png) no-repeat center center;
+    background-size: cover;
+    padding: 40px 0;
+}
+
+#hero-section img {
+    width: 90%;
+}
+
+#hero-section h2{
+    margin-bottom: 16px;
+}
+#hero-section h6{
+    margin-bottom: 32px;
+}
+#hero-section a{
+    padding: 10px 34px;
+    background-color: #FBC343;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+/* Head section */
+#tenant-feedback-section h3{
+    margin-bottom: 16px;
+}
+
+
+/* Why Kijiji */
+#why-kijiji-section{
+    padding: 96px 0;
+    background-color: #437BFB;
+}
+
+#why-kijiji-section .benefit{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 48px;
+
+}
+
+#why-kijiji-section .benefit div{
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    margin-left: 24px;
+}
+#why-kijiji-section .benefit img {
+    width: 100px;
+    height: 100px;
+}
+
+#why-kijiji-section h3,
+#why-kijiji-section h4,
+#why-kijiji-section p{
+    color: #fff;
+}
+
+#why-kijiji-section h3{
+    margin-bottom: 24px;
+}
+
+
+/* Product features */
+#product-features-section h4{
+    color: #FBC343;
+    margin-bottom: 8px;
+}
+#product-features-section h3{
+    margin-bottom: 24px;
+}
+.feature-details{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.feature-details div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 24px;
+    
+}
+
+.feature-details div img{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 24px;
+}
+.feature-details div p{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Request access */
+#request-account-section {
+    padding: 96px 0;
+    background-color: #FBC343;
+}
+#request-account-section h3,
+#request-account-section h4{
+    color: #fff;
+    margin-bottom: 48px;
+}
+#request-account-section a {
+    padding: 10px 34px;
+    background-color: #fff;
+    color: #FBC343;
+    border-radius: 30px;
+    border: none;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+/* Contact Us */
+
+#contact-us-section h3,
+#contact-us-section p {
+    margin-bottom: 28px;
+}
+
+#contact-us-section a {
+    padding: 10px 34px;
+    background-color: #FBC343;
+    color: #fff;
+    border-radius: 30px;
+    border: none;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+
+
+@media screen and (min-device-width: 300px) and (max-device-width: 600px) {
+
+    .navbar-nav li {
+        margin-top: 16px;
+    }
+
+    /* Text */
+    h2 {
+        font-size: 48px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    h6 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .page-section {
+        margin-bottom: 32px;
+    }
+
+
+    /* Hero section */
+    #hero-section .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #hero-section .hero-image {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #hero-section .hero-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-text a{
+        align-self: center;
+    }
+
+    #hero-section{
+        background: none;
+    }
+
+    #hero-section img {
+        width: 100%;
+    }
+
+    #tenant-feedback-section .column-image{
+        margin-top: 40px;
+    }
+
+    /* Why Kijiji */
+    #why-kijiji-section {
+        padding: 56px 0;
+    }
+
+    #why-kijiji-section .benefit {
+        display: flex;
+        flex-direction: column;
+        margin: 24px 0;
+        text-align: center;
+
+    }
+
+    #why-kijiji-section .benefit img {
+        width: 160px;
+        height: 160px;
+        align-self: center;
+    }
+
+    #why-kijiji-section h4{
+        margin-bottom: 16px;
+    }
+
+    #why-kijiji-section .benefit div {
+        padding-bottom: 0px;
+       border:none;
+        margin-left: 0px;
+    }
+
+    /* Product features */
+    .feature-details {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .feature-details div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 24px;
+        
+
+    }
+
+    .feature-details div img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 24px;
+    }
+
+    .feature-details div p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #tenant-payment .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #request-account-section {
+        padding: 56px 0;
+    }
+
+    .request-text{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 48px;
+    }
+
+    .request-text a{
+        align-self: center;
+    }
+
+    #contact-us-section .row{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+     .contact-text {
+         display: flex;
+         flex-direction: column;
+         margin-top: 48px;
+     }
+
+     .contact-text a {
+         align-self: center;
+     }
+
+
+
+}

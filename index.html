@@ -1,55 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> A better way to manage your property </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> A better way to manage your property </title>
 
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet">
 
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Google analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQZNX9350M"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+  <!-- Google analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VQZNX9350M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'G-VQZNX9350M');
-    </script>
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-VQZNX9350M');
+  </script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="The first all-in-one property management tool in Kenya">
   <meta property="og:site_name" content="Kijiji">
   <meta property="og:url" content="withkijiji.com">
-  <meta property="og:description" content="Use Kijiji to request and track payments  from your tenants, store tenant information, manage repairs and communicate with your tenants all in one app.">
+  <meta property="og:description"
+    content="Use Kijiji to request and track payments  from your tenants, store tenant information, manage repairs and communicate with your tenants all in one app.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://raw.githubusercontent.com/mbuthiya/Kijiji/gh-pages/Images/OpenGraph.png">
 
 </head>
+
 <body>
-    
-   
+
+  <!-- Navigation bar -->
+  <section id="navigation-section">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href=""><img src="images/Logo.png" alt="Kijiji Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#why-kijiji-section">Why Kijiji</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Features
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#data-storage">Data storage and management</a></li>
+                <li><a class="dropdown-item" href="#tenant-payment">Tenant payments</a></li>
+                <li><a class="dropdown-item" href="#tenant-coms">Tenant communication</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-us-section">Contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link btn btn-primary" href="https://forms.gle/V5cXXbPA8RfCJYMY8">Request an account</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- Navigation bar -->
+
+  <!-- Hero section -->
+  <section id="hero-section" class="page-section">
+    <div class="container">
+      <div class="row hero-row align-items-center">
+        <!-- Hero Image -->
+        <div class="col-sm-12 col-md-6 hero-image">
+          <img src="images/Hero Image.png" class="img-fluid" alt="Hero Image">
+        </div>
+
+        <!-- Hero text -->
+        <div class="col-sm-12 col-md-6 hero-text">
+          <h2>A better way to manage your rental units</h2>
+          <h6>Kijiji gives you the tools and data you need to easily, affordably and conveniently manage your rental units</h6>
+          <a href="https://forms.gle/V5cXXbPA8RfCJYMY8" class="btn btn-primary">Request an account</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Hero section -->
+
+  <!-- Heard tenants -->
+  <section id="tenant-feedback-section" class="page-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-6">
+          <h3>It is cheaper to keep good tenants... so make them feel heard.</h3>
+          <p>Losing a tenant is expensive, to help you minimise the risk Kijiji automatically collects feedback from your tenants to check how happy they are living in your property. This allows you to quickly fix any issues that come up and increase tenant satisfaction. </p>
+
+        </div>
+        <!-- Image section -->
+        <div class="col-sm-12 col-md-6 column-image">
+          <img src="images/tenant-feedback.png" class="img-fluid" alt="Tenant feedback illustration">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Heard tenants -->
+
+  <!-- Why Kijiji -->
+  <section id="why-kijiji-section" class="page-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-5">
+          <h3>Supercharge your tenant management</h3>
+          <h4>Kijiji aims to help you keep your tenants happy while making sure your business is growing </h4>
+
+        </div>
+        <!-- Benefits section -->
+        <div class="col-sm-12 col-md-7 ">
+          <div class="benefit">
+            <img src="images/Benefits-1.png" class="img-fluid" alt="Efficiency and Convenience">
+            <div>
+              <h4>Efficiency and Convenience</h4>
+              <p>You will be able to control and conduct almost all rental operations from a singular location. This will speed up administrative tasks and centralize all your business information.</p>
+            </div>
+
+          </div>
+
+           <div class="benefit">
+            <img src="images/Benefits-2.png" class="img-fluid" alt="Saves you money">
+            <div>
+              <h4>Saves you money</h4>
+              <p>Monitors tenant satisfaction regularly to ensure that you catch problems early to prevent tenant loss as well ass reduced administrative costs.</p>
+            </div>
+
+          </div>
+
+          <div class="benefit">
+            <img src="images/benefits-3.png" class="img-fluid" alt="Earns you money">
+            <div>
+              <h4>Earns you money</h4>
+              <p>Auto implemented late fees increases revenue as well as incentivizes the tenants to pay bills on time thus having a consistent and predictable revenue stream</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Why Kijiji -->
+
+  <!-- Product Features -->
+  <section id="product-features-section">
+
+    <!-- Data storage -->
+     <div class="container page-section" id="data-storage">
+      <div class="row align-items-center">
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-6">
+          <h4>Data storage and management</h4>
+          <h3>All your property data in one place</h3>
+          <p>With Kijiji you and your team can store all your property data in one central place. You can easily have an overview of everything that is happening in all your rental units across multiple properties. </p>
+
+          <div class="feature-details">
+            <div>
+              <img src="images/data-storage-1.png" class="img-fluid" alt="Tenant information">
+              <p>Store a record of all your property and tenants information.</p>
+            </div>
+            <div>
+              <img src="images/data-storage-2.png" class="img-fluid" alt="Payment records">
+              <p>Have detailed history records of all tenant payments.</p>
+            </div>
+            <div>
+              <img src="images/data-storage-3.png" class="img-fluid" alt="Tenant satisfaction">
+              <p>View data on tenant satisfaction over a period of time.</p>
+            </div>
+          </div>
+
+        </div>
+        <!-- Image section -->
+        <div class="col-sm-12 col-md-6 column-image">
+          <img src="images/Data.png" class="img-fluid" alt="Data product image">
+        </div>
+
+      </div>
+    </div>
+    <!-- Data storage -->
+
+    <!-- Tenant payment -->
+     <div class="container page-section" id="tenant-payment">
+      <div class="row align-items-center">
+
+        <!-- Image section -->
+        <div class="col-sm-12 col-md-6 column-image">
+          <img src="images/Payments.png" class="img-fluid" alt="Payment product image">
+        </div>
+
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-6">
+          <h4>Tenant invoicing and payment tracking</h4>
+          <h3>Quickly invoice tenants and track payments</h3>
+          <p>With Kijiji you can easily send your tenants bills. We then send tenants reminders to pay and automatically add late fees when tenants fail to pay bills on time. </p>
+
+          <div class="feature-details">
+            <div>
+              <img src="images/payments-tracking-1.png" class="img-fluid" alt="Automated Reminders">
+              <p>Automated payment reminders sent to your tenants.</p>
+            </div>
+            <div>
+              <img src="images/payments-tracking-2.png" class="img-fluid" alt="Late fees added">
+              <p>Late fees are added automatically if bills are not paid on time.</p>
+            </div>
+            <div>
+              <img src="images/payments-tracking-3.png" class="img-fluid" alt="Automated Receipts">
+              <p>We send your tenants automated receipts to confirm payment.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+    <!-- Tenant payment -->
+
+    <!-- Tenant communication -->
+    <div class="container page-section" id="tenant-coms">
+      <div class="row align-items-center">
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-6">
+          <h4>Tenant communication</h4>
+          <h3>Easily communicate with all your tenants</h3>
+          <p>Kijiji allows you to send messages to your tenants easily to inform them about major events happening on the property.</p>
+
+        </div>
+        <!-- Image section -->
+        <div class="col-sm-12 col-md-6 column-image">
+          <img src="images/Message.png" class="img-fluid" alt="Message product image">
+        </div>
+
+      </div>
+    </div>
+    <!-- Tenant communication -->
+
+  </section>
+  <!-- Product Featutes -->
+
+  <!-- Request account -->
+  <section id="request-account-section" class="page-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-6 request-text">
+          <h3>If you like it so far... Request an account now.</h3>
+          <h4>We are still in development but you can leave your details and we will contact you when we are ready to launch. </h4>
+          <a href="https://forms.gle/V5cXXbPA8RfCJYMY8" class="btn btn-primary">Request an account</a>
+
+        </div>
+        <!-- Image section -->
+        <div class="col-sm-12 col-md-6 column-image">
+          <img src="images/Request account.png" class="img-fluid" alt="Request account">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--  Request account -->
+
+  <!-- Contact us -->
+  <section id="contact-us-section" class="page-section">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Text section -->
+        <div class="col-sm-12 col-md-6 contact-text">
+          <h3>Please contact us if you have any more questions about our product.</h3>
+          <p>Hi, I am James founder of Kijiji. I will be happy to answer any question you have about our product so feel free to reach out. </p>
+          <a href="https://wa.me/254717687837" class="btn btn-primary">Send me a message</a>
+
+        </div>
+        <!-- Image section -->
+        <div class="col-sm-12 col-md-6 column-image">
+          <img src="images/contact-us.png" class="img-fluid" alt="contact-us">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!--  Contact is -->
+
+  <!-- Javascript Bootstrap CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  </script>
 
 
-
-    <!-- Javascript Bootstrap CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-    
 </body>
+
 </html>
