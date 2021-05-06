@@ -8,8 +8,8 @@
   <title> A better way to manage your property </title>
 
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
   <!-- Google fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -55,22 +55,35 @@
   <!-- Menu Section -->
   <section class="container" id="menu-section">
 
-    <div class="row">
-      <!-- Logo -->
-      <div class="col-sm-12 col-md-6">
-        <img src="Images/Logo.png" alt="Kijiji Logo" height="64px">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="Images/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto d-lg-flex align-items-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#data-storage">Store data</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tenant-payment">Collect payment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing-section">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://app.withkijiji.com/tenant-sign-up">Tenant log in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link btn btn-primary" href="https://app.withkijiji.com/sign_up">Create an account</a>
+          </li>
+
+        </ul>
+      
       </div>
-
-      <!-- Sign up buttons -->
-      <div class="col-sm-12 col-md-6 buttons">
-        <div class="menu-buttons">
-          <a href="https://app.withkijiji.com/sign_up" class="btn btn-primary button-primary-small">Create an account</a>
-
-        </div>
-        
-      </div>
-
-    </div>
+    </nav>
 
   </section>
   <!-- Menu Section end -->
@@ -82,7 +95,7 @@
 
       <!-- Hero text -->
       <div class="col-sm-12 col-md-6">
-        <h2>Manage  your rental units bila stress</h2>
+        <h2>Manage your rental units bila stress</h2>
         <h5>Kijiji gives you all the tools you need to manage your rental units for as low as KES 250 a month.</h5>
 
         <!-- Hero buttons -->
@@ -97,7 +110,7 @@
       </div>
 
       <!-- Hero image -->
-      <div class="col-sm-12 col-md-6" id="hero-background-image" >
+      <div class="col-sm-12 col-md-6" id="hero-background-image">
         <img src="Images/Home-Illustration.png" class="img-fluid">
       </div>
 
@@ -146,7 +159,7 @@
         </div>
 
       </div>
-      
+
     </div>
 
   </section>
@@ -242,7 +255,8 @@
         <div>
           <h6>Data storage and management</h6>
           <h3>All your property data in one place</h3>
-          <p>With Kijiji you and your team can store all your property data in one central place. You can easily have an overview of everything that is happening in all your rental units across multiple properties.</p>
+          <p>With Kijiji you and your team can store all your property data in one central place. You can easily have an
+            overview of everything that is happening in all your rental units across multiple properties.</p>
         </div>
 
         <div class="features-group">
@@ -274,7 +288,7 @@
   </section>
   <!-- Data storage section end -->
 
-   <!-- Payment section -->
+  <!-- Payment section -->
   <section class="container" id="tenant-payment">
 
     <div class="row">
@@ -284,7 +298,8 @@
         <div>
           <h6>Tenant invoicing and payment tracking</h6>
           <h3>Quickly invoice tenants and track payments</h3>
-          <p>With Kijiji you can easily send your tenants bills. We then send tenants reminders to pay and automatically add late fees when tenants fail to pay bills on time.</p>
+          <p>With Kijiji you can easily send your tenants bills. We then send tenants reminders to pay and automatically
+            add late fees when tenants fail to pay bills on time.</p>
         </div>
 
         <div class="features-group">
@@ -388,8 +403,14 @@
   </section>
 
   <!-- Javascript Bootstrap CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
   </script>
 
 
