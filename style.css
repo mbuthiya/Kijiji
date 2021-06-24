@@ -314,13 +314,7 @@ html {
 #pricing {
     text-align: center;
     margin-top: 40px;
-}
-
-#pricing h1 {
-    font-family: poppins;
-    font-size: 60px;
-    font-weight: 600;
-    color: #FBC343;
+    
 }
 
 #pricing h4 {
@@ -346,51 +340,71 @@ html {
     font-weight: 500;
 }
 
-#pricing .buttons {
-    margin-top: 24px;
-    margin-bottom: 16px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#pricing .buttons a {
+#pricing  a{
 
     font-family: poppins;
     font-size: 18px;
     font-weight: 500;
     border-radius: 5px;
-    padding: 16px 64px;
+    padding: 8px 64px;
+    text-align: center;
 
 }
 
-#pricing .buttons a:hover {
+#pricing a:hover {
     text-decoration: none;
 }
 
-#pricing .buttons .primary {
+#pricing .primary {
     color: #fff;
     background-color: #FBC343;
     border: none;
 
 }
 
-#pricing .buttons .outline {
-    color: #2F4858;
-    background-color: #fff;
-    border: 1px solid #2F4858;
+
+#payment-plans{
+    text-align: left;
+    margin-top: 24px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.pricing-items-first{
-    margin-top: 40px;
+.payment-plan{
+    padding: 40px 16px;
+    box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    margin-left: 8px;
+    width: 25vw;
 }
 
-#pricing .card-layout p{
+.payment-plan h2{
     font-family: poppins;
+    font-size: 32px;
+    margin-top: 16px;
     color: #2F4858;
-    font-size: 16px;
     font-weight: 500;
-    margin-bottom: 0;
 }
+.payment-plan p{
+    font-family: Roboto;
+    font-size: 16px;
+    margin-top: 8px;
+    color: #2F4858;
+}
+
+.payment-plan .price{
+    margin-top: 40px;
+    margin-bottom: 0 !important;
+}
+
+.payment-plan a{
+    margin-top: 40px;
+    display: block;
+}
+
+
+
 
 
 /* Tenants */
@@ -661,6 +675,18 @@ html {
 
      #faq {
         padding: 16px;
+     }
+
+     #payment-plans {
+         padding: 0 8px;
+         display: flex;
+         flex-direction: column;
+         justify-content: space-evenly;
+     }
+     .payment-plan {
+         padding: 40px 16px;
+         margin-bottom: 8px;
+         width: 90vw;
      }
 
 }
