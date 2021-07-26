@@ -297,6 +297,15 @@ p{
     animation: float 6s ease-in-out infinite;
 }
 
+
+.policy{
+    text-align: center;
+    margin-top: 80px;
+}
+.policy img{
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+}
 .pricing-features{
     margin-top: 40px;
     text-align: center;
