@@ -292,7 +292,7 @@ p{
 
 #pricing img{
     margin-top: 40px;
-    width: 30vw;
+    width: 25vw;
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
 }
